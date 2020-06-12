@@ -26,7 +26,7 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to tasks_url, notice: "タスク「#{task.name}」を登録しました"
     else
-      notice: "タスク「#{task.name}」を登録できませんでした"
+      # notice: "タスク「#{task.name}」を登録できませんでした"
       render :new
     end
   end
